@@ -6,11 +6,11 @@ machine:
     version:
       2.3.1
 
-  database:
-    override:
-      - mv config/database.ci.yml config/database.yml
-      - bundle exec rake db:create db:schema:load --trace
+database:
+  override:
+    - mv config/database.ci.yml config/database.yml
+    - bundle exec rake db:create db:schema:load --trace
 
-  test:
-    override:
-      - bundle exec rspec
+test:
+  override:
+    - bundle exec rspec
