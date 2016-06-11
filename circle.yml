@@ -13,4 +13,7 @@ database:
 
 test:
   override:
-    - bundle exec rspec
+    - bundle exec rspec:
+        parallel: true
+        files:
+          - spec/**/*_spec.rb
