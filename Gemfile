@@ -38,4 +38,7 @@ group :test do
   # TDD
   gem 'faker'
   gem 'rspec-rails'
+
+  # formatter
+  gem 'rspec_junit_formatter', '0.2.2'
 end
